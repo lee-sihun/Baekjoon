@@ -1,10 +1,12 @@
 x = int(input())
 n = int(input())
-
-price = 0
+num = 0
 
 for i in range(n):
-    a, b = map(int, input().split())
-    price += a*b
+    a,b = map(int, input().split())
+    num += a*b
 
-print("Yes") if x == price else print("No")
+if x == num:
+    print("Yes")
+else:
+    print("No")
